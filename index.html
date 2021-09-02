@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/logo.png">
 </head>
 <body>
@@ -276,7 +277,11 @@
     <script src="js/smooth-scroll.js"></script>
 
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+                   // All animations will take exactly 500ms
+     var scroll = new SmoothScroll('a[href*="#"]', {
+	       speed: 1000,
+	       speedAsDuration: true
+});
     </script>
 
 
