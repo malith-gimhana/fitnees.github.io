@@ -22,6 +22,7 @@
 }
 .navbar-toggler
 {
+    box-shadow: none !important;
     border: none !important;
     outline: none !important;
 }
